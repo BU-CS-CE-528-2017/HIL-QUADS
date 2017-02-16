@@ -1,4 +1,4 @@
-# This is a simple script illistrating how to call HIL API 
+# This is a simple script illustrating how to call HIL API 
 # 
 # Vladimir
 
@@ -8,7 +8,7 @@ from haas import model, server, api
 from haas.test_common import config, config_set, fresh_database, \
     fail_on_log_warnings, with_request_context
 
-# This is a preliminary setup. You can ignore code starting from this line.
+# This is preliminary setup. You can ignore code starting from this line.
 
 @pytest.fixture
 def configure():
@@ -44,7 +44,7 @@ pytestmark = pytest.mark.usefixtures(*default_fixtures)
 # Preliminary setup ends. Stop ignoring code.
 
 # This function will be invoked if you type in shell: py.test HIL_API_demo.py
-# You can add more sofisticated API calls which are documented in 
+# You can add more sophisticated API calls which are documented in 
 # http://hil.readthedocs.io/en/latest/apidesc.html
 
 def test_test():
