@@ -1,4 +1,4 @@
-Minimally exteneded the quads cli to be able to use the HIL API.
+Minimally extended the quads cli to be able to use the HIL API.
 Currently implemented to only allow 'GET' requests, but could be
 easily configured to allow more. This was just meant to be a very
 simple demonstration of how the HIL RESTful API can be accessed by
