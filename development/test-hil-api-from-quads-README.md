@@ -14,7 +14,7 @@ here as an example).
 
 Directions:
 
-1) Copy replace quads/bin/quads.py with the quads.py from this directory, and add add_switches.sh to your hil directory
+1) Copy replace quads/bin/quads.py with the quads.py from this directory, and add add_switches.sh to your hil directory.
 
     $ cp HIL-QUADS/development/quads.py your/path/to/quads/bin/quads.py
     $ cp HIL-QUADS/development/add_switches.sh your/path/to/hil/
