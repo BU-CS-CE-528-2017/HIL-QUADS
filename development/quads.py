@@ -7,8 +7,8 @@ import yaml
 import argparse
 import os
 import sys
-import requests
-import json
+import requests #added for EC528 HIL-QUADS Demo
+import json #added for EC528 HIL-QUADS Demo
 from subprocess import call
 from subprocess import check_call
 
@@ -230,9 +230,9 @@ def main(argv):
         quads.quads_move_hosts(args.movecommand, args.dryrun, args.statedir, args.datearg)
         exit(0)
 
+    #added for EC528 HIL-QUADS Demo
+    #hardcoded to work on localhost port 5000, but can be reconfigured to work on another server
     if args.hilapiaction is not None and args.hilapicall is not None:
-        #print args.hilapiaction
-        #print args.hilapicall
         if args.hilapiaction == "GET":
             r = requests.get('http://127.0.0.1:5000' + args.hilapicall)
             print r.text
