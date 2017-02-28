@@ -1,10 +1,12 @@
+#HIL model.py class descriptions
+
 All appear to be subclassed from db.Model
 
  
 
-Project
+##Project
 
-Members:
+###Members:
 
     Id (integer)
     Label (string)
@@ -12,15 +14,15 @@ Members:
     Networks_created (backref)
     Networks_access (backref)
 
-Methods:
+###Methods:
 
     _init_
 
  
 
-Nic
+##Nic
 
-Members:
+###Members:
 
     Id (integer)
     Label (string)
@@ -32,15 +34,15 @@ Members:
     Current_action (backref)
     Attachments (backref)
 
-Methods:
+###Methods:
 
     _init_
 
  
 
-Node
+##Node
 
-Members:
+###Members:
 
     Id (integer)
     Label (string)
@@ -51,15 +53,15 @@ Members:
     Obm (Obm)
     Metadata (backref)
 
-Methods:
+###Methods:
 
     none
 
  
 
-Metadata
+##Metadata
 
-Members:
+###Members:
 
     Id (int)
     Label (string)
@@ -67,15 +69,15 @@ Members:
     Owner_id (node.id)
     Owner (Node)
 
-Methods:
+###Methods:
 
     _init_
 
  
 
-Network
+##Network
 
-Members:
+###Members:
 
     Id (int)
     Label (string)
@@ -87,15 +89,15 @@ Members:
     Scheduled_nics (backref)
     Attachments (backref)
 
-Methods:
+###Methods:
 
     _init_
 
  
 
-Port
+##Port
 
-Members:
+###Members:
 
     Id (int)
     Label (string)
@@ -103,15 +105,15 @@ Members:
     Owner (Switch)
     Nic (backref)
 
-Methods:
+###Methods:
 
     _init_
 
  
 
-Switch
+##Switch
 
-Members:
+###Members:
 
     Id (int)
     Label (string)
@@ -121,7 +123,7 @@ Members:
         Polymorphic_on
     Ports (backref)
 
-Methods:
+###Methods:
 
     Validate (static)
     Session
@@ -131,9 +133,9 @@ Methods:
 
  
 
-Obm
+##Obm
 
-Members:
+###Members:
 
     Id (int)
     Type (string)
@@ -141,7 +143,7 @@ Members:
         Polymorphic_on
     Node (backref)
 
-Methods:
+###Methods:
 
     Validate (static)
     Power_cycle
@@ -154,9 +156,9 @@ Methods:
 
  
 
-NetworkingAction
+##NetworkingAction
 
-Members:
+###Members:
 
     Id (int)
     Nic_id (nic.id)
@@ -167,9 +169,9 @@ Members:
 
  
 
-NetworkAttachment
+##NetworkAttachment
 
-Members:
+###Members:
 
     Id (int)
     Nic_id (nic.id)
