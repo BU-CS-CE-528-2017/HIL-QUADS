@@ -13,12 +13,29 @@ All appear to be subclassed from db.Model
     Nodes (backref)
     Networks_created (backref)
     Networks_access (backref)
+    Users (backref)
 
 ###Methods:
 
     _init_
 
- 
+
+##User
+
+###Members:
+
+    Id (integer)
+    Label (string)
+    Is_admin (boolean)
+    Hashed_password (string)
+    Projects (user_projects)
+
+###Methods:
+
+    _init_
+    verify_password
+    set_password
+
 
 ##Nic
 
