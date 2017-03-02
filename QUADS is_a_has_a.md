@@ -35,3 +35,16 @@ Members: `config, statedir, movecommand, datearg, syncstate, initialize, force`
 
 Members: `data`
 #
+`quads_write_data` to write data back
+
+Members: `data` (all 3 [Hosts](#hosts), [Clouds](#clouds) and [History](#history))
+#
+`quads_init_data` if passed --init, the config data is wiped
+
+Members: `data` (all 3 [Hosts](#hosts), [Clouds](#clouds) and [History](#history))
+#
+`_quads_find_current` which is a helper function called from other methods and not from main()
+
+Members: `host, history, current_time, requested_time, start_obj, end_obj, default_cloud, current_cloud, current_override`
+#
+
