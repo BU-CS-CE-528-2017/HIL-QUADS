@@ -24,7 +24,7 @@ Members: `data`
 ##
 ##Class QUADSData
 
-`_init_` initializes QUADSData object using [Hosts](#Class Hosts), Clouds and History
+`_init_` initializes QUADSData object using [Hosts](#class-hosts), Clouds and History
 ##
 **Class QUADS**
 ##
