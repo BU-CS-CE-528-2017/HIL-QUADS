@@ -25,6 +25,13 @@ Members: `data`
 
 `_init_` initializes QUADSData object using [Hosts](#hosts), [Clouds](#clouds) and [History](#history)
 
-**Class QUADS**
-##
+##QUADS
 
+`_init_`
+
+Members: `config, statedir, movecommand, datearg, syncstate, initialize, force`
+#
+`_quads_history_init` to initialize history
+
+Members: `data`
+#
