@@ -83,6 +83,31 @@ Members: `hosts.data`
 
 Members: `hosts.data`
 #
+`quads_update_host` define or update a host resource
+
+Members: hostresource, hostcloud, forceupdate**********
+#
+`quads_update_cloud` define or update a cloud resource
+
+Members: `cloudowner, cloudticket, qinq, ccusers`
+#
+`quads_add_host_schedule` define a schedule for a given host
+
+Members: `schedstart, schedend, schedcloud, host`
+#
+`quads_rm_host_schedule` remove a scheduled override for a given host
+
+Members: `rmschedule, host`
+#
+`quads_mod__host_schedule` modify an existing schedule
+
+Members: `modschedule, schedstart, schedend, schedcloud, host`
+#
+`quads_move_host` as needed move hosts based on defined schedule.
+#
+`quads_print_result` for reporting the result
+
+Members: `host, cloudonly, datearg, summaryreport, fullsummaryreport, lsschedule`
 
 
 
