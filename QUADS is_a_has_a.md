@@ -1,5 +1,10 @@
 #In Progress.....
 # libquads.py Class description
+##Class QUADSData
+
+`_init_` initializes QUADSData object using [Hosts](#Class Hosts), Clouds and History
+##
+
 ##Class Hosts
  
 `_init_`
@@ -22,10 +27,7 @@ Members: `data`
 
 Members: `data`
 ##
-##Class QUADSData
 
-`_init_` initializes QUADSData object using [Hosts](#Class Hosts), Clouds and History
-##
 **Class QUADS**
 ##
 
