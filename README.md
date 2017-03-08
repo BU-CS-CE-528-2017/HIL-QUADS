@@ -9,3 +9,11 @@ HIL , or the Hardware Isolation Layer, is a minimalistic layer that decouples no
 QUADS is independent of the underlying provisioning system and HIL does not put restrictions on how the nodes are scheduled. In this project, you will extend QUADS to schedule resources allocated using HIL. Success will enable developers to perform large scale experiments on physical hardware allocated out of the MOC. You can expect this service to be used by researchers and students from MIT, Harvard, BU, NU and UMass, as well as Open Source developers and the industry partners of the MOC.
 
 You will learn in depth about scheduling, provisioning, and complexity of integrating existing systems to create a new solution with a chance to get your pull requests integrated into QUADS and HIL. You will analyze and make modifications to the code-base of both of these projects. If needed you will develop new API calls. This will include a full cycle of development experience from proposing the design, implementation and unit testing to documentations for users and developers.
+
+Workflow for QUADS:
+
+ * redhat-performance/quads (Gerrit Requests)
+   * BUEC528-HIL-QUADS/quads (Pull Requests)
+     * isaac/quads (work)
+     * dan/quads (work)
+     * etc. (other student repos)
