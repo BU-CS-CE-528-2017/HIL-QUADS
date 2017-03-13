@@ -2,7 +2,7 @@
 
 ###Two references that tell you almost every useful git command:
 
-    https://services.github.com/on-demand/downloads/github-git-cheat-sheet.p$
+    https://services.github.com/on-demand/downloads/github-git-cheat-sheet
     http://ndpsoftware.com/git-cheatsheet.html
 
 
