@@ -6,12 +6,14 @@
     http://ndpsoftware.com/git-cheatsheet.html
 
 ###How to update your fork when upstream updates happen
+
     git checkout master
     git fetch class
     git merge class/master
     git push origin master
 
 ###How to fix things if you screw up and work on master:
+
     git checout -b new-master class/master
     git branch -m master test-branch
     git branch -m new-master master
