@@ -1,6 +1,12 @@
-# NOT FINISHED
-
 # External data required by QUADS 
+## YML conf file
+
+Consists of :
+  • Foreman racks
+  • Untouchable hosts list
+  • IPMI account details
+  • irc bot, wiki details (optional maybe)
+
 ## Declaring a Cloud
 
 • Cloud name
@@ -13,11 +19,12 @@
 
 • Host name
 
-• Relation with the clouds in the database
+• Relation with the clouds in the database(to which cloud it belongs)
 
 • Schedule start
 
 • Schedule end
+
 
 
 
