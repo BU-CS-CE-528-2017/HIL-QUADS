@@ -15,5 +15,9 @@
 
 • Relation with the clouds in the database
 
+• Schedule start
+
+• Schedule end
+
 
 
