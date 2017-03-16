@@ -3,8 +3,11 @@
 
 Consists of :
   • Foreman racks
+  
   • Untouchable hosts list
+  
   • IPMI account details
+  
   • irc bot, wiki details (optional maybe)
 
 ## Declaring a Cloud
