@@ -1,6 +1,6 @@
-#Initial Setup of HIL and QUADS:
+# Initial Setup of HIL and QUADS:
 
-##HIL:
+## HIL:
 
 	1. cd to directory you're using for development
 	2. git clone https://github.com/BUEC528-HIL-QUADS/hil
@@ -26,7 +26,8 @@
 
 
 
-##QUADS:
+## QUADS:
+
 	1. Open a new terminal window
 	2. cd to the same directory as hil	
 	3. git clone https://github.com/BUEC528-HIL-QUADS/quads
@@ -36,5 +37,5 @@
 	7. If there's an error relating to opt/quads/log/quads.log, execute the following: 		touch /opt/quads/log/quads.log	
 	8. If you receive the following warning:  "WARNING - Warning: /opt/quads/data/schedule.yaml exists. Use --force to initialize.", use bin/quads.py --init --force 
 
-#Starting Commands
+# Starting Commands
 
