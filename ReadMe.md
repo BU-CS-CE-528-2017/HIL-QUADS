@@ -15,14 +15,17 @@
 	Leave the haas server running, you can see changes happen in this window as commands are executed
 	
 	From a separate terminal window:
-	11. cd [hil installation path], 
-	12. haas serve_networks
+	11. cd [hil installation path]
+	12. virtualenv .venv
+	13. source .venv/bin/activate
+	14. pip install -e .
+	15. haas serve_networks
 
 	From separate teminal window:
-	13. cd [hil installation path]/
-	14. virtualenv .venv
-	15. source .venv/bin/activate
-	16. pip install -e .
+	16. cd [hil installation path]/
+	17. virtualenv .venv
+	18. source .venv/bin/activate
+	19. pip install -e .
 	
 	You are now free to use HIL from the second terminal window
 	haas list_nodes all should return an empty list
@@ -46,11 +49,11 @@
 	2. bin/quads.py --define-cloud cloud02 --description "02 Cloud Environment"
 	3. bin/quads.py --define-cloud cloud03 --description "03 Cloud Environment"
 	4. bin/quads.py --ls-clouds
-	5. bin/quads.py --define-host host01
-	6. bin/quads.py --define-host host02
-	7. bin/quads.py --define-host host 03
-	8. In another terminal window in the hil folder, make sure steps 12-15 from the HIL setup guide has been done
-	9. 
-	
-	
-	pytest -v example.py
+	5. bin/quads.py --define-host host01 --default-cloud cloud01
+	6. bin/quads.py --define-host host02 --default-cloud cloud02
+	7. bin/quads.py --define-host host 03 --default-cloud cloud03
+	8. go back to your terminal window from HIL steps 16-19
+	9. haas list_projects
+	10. haas list_nodes
+	11. haas list_networks
+	12. If you want to run our pytests, go into quads/testing and run pytest -v test_inventory.py
