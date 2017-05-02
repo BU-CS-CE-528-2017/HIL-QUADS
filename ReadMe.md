@@ -51,15 +51,26 @@
 
 # Starting Commands
 ### Some basic commands to get you started using our implementation
-	1. bin/quads.py --define-cloud cloud01 --description "Primary Cloud Environment"
-	2. bin/quads.py --define-cloud cloud02 --description "02 Cloud Environment"
-	3. bin/quads.py --define-cloud cloud03 --description "03 Cloud Environment"
-	4. bin/quads.py --ls-clouds
-	5. bin/quads.py --define-host host01 --default-cloud cloud01
-	6. bin/quads.py --define-host host02 --default-cloud cloud02
-	7. bin/quads.py --define-host host 03 --default-cloud cloud03
-	8. go back to your terminal window from HIL steps 16-19
-	9. haas list_projects
-	10. haas list_nodes
-	11. haas list_networks
-	12. If you want to run our pytests, go into quads/testing and run pytest -v test_inventory.py
+#### Quads commands:
+	bin/quads.py --define-cloud cloud01 --description "Primary Cloud Environment"
+	bin/quads.py --define-cloud cloud02 --description "02 Cloud Environment"
+	bin/quads.py --define-cloud cloud03 --description "03 Cloud Environment"
+	bin/quads.py --ls-clouds
+	bin/quads.py --define-host host01 --default-cloud cloud01
+	bin/quads.py --define-host host02 --default-cloud cloud02
+	bin/quads.py --define-host host 03 --default-cloud cloud03
+
+#### Hil commands:
+    For the Quads-HIl integration to work, nodes need to be added on the Hil side. To quickly add nodes:
+    In your HIL client terminal:
+    git fetch origin
+    git checkout final-demo
+    ./add_nodes.py
+
+    other Hil commands:
+
+	haas list_projects
+	haas list_nodes
+	haas list_networks
+
+	If you want to run our pytests, go into quads/testing and run pytest -v test_inventory.py
