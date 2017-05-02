@@ -34,12 +34,12 @@
 ## QUADS:
 
 	1. Open a new terminal window
-	2. cd to the same directory as hil
+	2. cd to directory you want to work from
 	3. git clone https://github.com/BUEC528-HIL-QUADS/quads
-    4. git fetch origin
-    5. git checkout final-demo
-	6. yum install PyYAML, pip install pytest
-	7. cd quads
+	4. cd quads
+    5. git fetch origin
+    6. git checkout final-demo
+	7. yum install PyYAML, pip install pytest
 	8. bin/quads.py --init
 	9. If there's an error relating to opt/quads/log/quads.log, execute the following: 		touch /opt/quads/log/quads.log
 	10. If you receive the following warning:  "WARNING - Warning: /opt/quads/data/schedule.yaml exists. Use --force to initialize.",
