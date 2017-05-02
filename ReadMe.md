@@ -36,12 +36,18 @@
 	1. Open a new terminal window
 	2. cd to the same directory as hil
 	3. git clone https://github.com/BUEC528-HIL-QUADS/quads
-	4. yum install PyYAML, pip install pytest
-	5. cd quads
-	6. bin/quads.py --init
-	7. If there's an error relating to opt/quads/log/quads.log, execute the following: 		touch /opt/quads/log/quads.log
-	8. If you receive the following warning:  "WARNING - Warning: /opt/quads/data/schedule.yaml exists. Use --force to initialize.", use bin/quads.py --init --force
-	9. Go into quads/conf/quads.yml, and go to lines 13-15.  The only lines you should leave uncommented is the hardware service you'd like to use, for example a HIL user would leave line 13, "hardwareservice: Hil", uncommented, and comment out lines 14 and 15. If you'd like to use the native QUADS hardware, Juniper, then you'd leave the line "hardwareservice: QuadsNative" uncommented.  By default, it is set to Mock.
+    4. git fetch origin
+    5. git checkout final-demo
+	6. yum install PyYAML, pip install pytest
+	7. cd quads
+	8. bin/quads.py --init
+	9. If there's an error relating to opt/quads/log/quads.log, execute the following: 		touch /opt/quads/log/quads.log
+	10. If you receive the following warning:  "WARNING - Warning: /opt/quads/data/schedule.yaml exists. Use --force to initialize.",
+       use bin/quads.py --init --force
+	11. Go into quads/conf/quads.yml, and go to lines 13-15.  The only lines you should leave uncommented is the
+       hardware service you'd like to use, for example a HIL user would leave line 13, "hardwareservice: Hil", uncommented, and comment out lines 14 and 15.
+       If you'd like to use the native QUADS hardware, Juniper, then you'd leave the line "hardwareservice: QuadsNative" uncommented.
+       By default, it is set to Mock.
 
 # Starting Commands
 ### Some basic commands to get you started using our implementation
